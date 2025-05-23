@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulador de Pago</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="input-screen">
+    <h2>Ingresá el monto a mostrar</h2>
+    <input type="number" id="price" placeholder="Ej: 8488" />
+    <button onclick="mostrarPantalla()">Mostrar</button>
+  </div>
+
+  <div id="result-screen" style="display:none;">
+    <div class="frame">
+      <img src="fondo_base_limpio.jpeg" class="fondo">
+      <div class="precio">$ <span id="precio-dinamico">8.488</span></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
